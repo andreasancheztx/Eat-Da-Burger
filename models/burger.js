@@ -2,7 +2,9 @@ var orm = require("../config/orm.js");
 
 var burger = {
     all: function (cb) {
+        console.log("inside burger file")
         orm.all("burgers", function (res) {
+            console.log("inside burger callback")
             cb(res);
         });
     },

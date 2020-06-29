@@ -10,8 +10,10 @@ router.get("/", function (req, res) {
 
 router.get("/burgers", function (req, res) {
     // express callback response by calling burger.selectAllBurger
+    console.log("hello")
     burger.all(function (burgerData) {
         // wrapper for orm.js that using MySQL query callback will return burger_data, render to index with handlebar
+        console.log("helloburger")
         res.render("index", { burger_data: burgerData });
     });
 });

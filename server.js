@@ -1,5 +1,6 @@
 require("dotenv").config()
 const express = require("express")
+const routes = require("./controllers/burgerscontroller")
 const app = express()
 const PORT = process.env.PORT || 3000
 
@@ -16,9 +17,9 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-//var routes = require("./controllers/catsController.js");
+// var routes = require("./controllers/.burgerscontroller.js");
 
-//app.use(routes);
+app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function () {

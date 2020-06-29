@@ -36,8 +36,10 @@ function objToSql(ob) {
 // Object for all our SQL statement functions.
 var orm = {
     all: function (tableInput, cb) {
+        console.log("inside orm")
         var queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function (err, result) {
+            console.log("inside orm callback")
             if (err) {
                 throw err;
             }

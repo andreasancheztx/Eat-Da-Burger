@@ -1,5 +1,5 @@
 {
-  "name": "Eat-Da-Burger",
+  "name": "eat-da-burger",
   "version": "1.0.0",
   "description": "Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.",
   "main": "server.js",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/andreasancheztx/Eat-Da-Burger.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrea Sanchez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/andreasancheztx/Eat-Da-Burger/issues"
@@ -22,6 +22,8 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
+    "json": "^9.0.6",
     "mysql": "^2.18.1"
-  }
+  },
+  "devDependencies": {}
 }
